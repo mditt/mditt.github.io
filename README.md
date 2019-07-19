@@ -1,2 +1,2 @@
 # mditt.github.io
-practice
+Практика

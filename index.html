@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Веб Депо | IAAS</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body id="page" ontouchstart="">
+    <div id="main">
+        <header id="header">
+            <div class="top_block">
+                <div class="container">
+                    <div class="address">г. Пермь, ул. Пермская, д. 70, офис 22</div>
+                    <div class="email">info@web-depo.com</div>
+                    <div class="tel">8 (342) 238-86-01 | <a href="#">Заказать звонок</a></div>
+                </div>
+            </div>
+            <div class="menu_block">
+                <div class="container">
+                    <div class="logo">
+                        <a href="/"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <ul class="menu">
+                        <li><a href="#" class="link">Веб Депо</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Лицензии</a></li>
+                                <li><a href="#">Реквизиты</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="link">Платформа</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">О платформе</a></li>
+                                <li><a href="#">Объявления</a></li>
+                                <li><a href="#">Свидетельства</a></li>
+                                <li><a href="#">Курсы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link">IaaS</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Об услуге</a></li>
+                                <li><a href="#">Цены</a></li>
+                                <li><a href="#">Типовые решения</a></li>
+                                <li><a href="#">Демостенд</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="link">Личный кабинет</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Войти</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="action"><a href="#" class="login">Вход</a><a href="#" class="demo">Заявка на демонстрацию</a></div>
+                </div>
+            </div>
+            <img src="img/bg.jpg" alt="">
+        </header>
+        <!-- END id="header" -->
+
+        <div id="content">
+            <section id="prices">
+                <h2>Прейскурант</h2>
+                <table>
+                    <tr>
+                        <td class="top">Наименование</td>
+                        <td class="top">Цены</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Стоимость CPU</td>
+                        <td class="right">500 руб. за 1 ядро в месяц</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Стоимость ОЗУ</td>
+                        <td class="right">200 руб. за 1 Гб в месяц</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Стоимость дисковой памяти (SATA-диски, RAID10)</td>
+                        <td class="right">5 руб за 1 Гб в месяц</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Стоимость дисковой памяти повышенной производительности (SAS-диски, RAID10)</td>
+                        <td class="right">15 руб. за 1 Гб в месяц</td>
+                    </tr>
+                    <tr>
+                        <td class="left">Виртуальный роутер</td>
+                        <td class="right">0 руб. в месяц</td>
+                    </tr>
+                </table>
+                <h3>Для любой конфигурации включено:</h3>
+                <ul>
+                    <li>Тип виртуализации: KVM</li>
+                    <li>Скорость доступа к сети Интернет: 2 Мбит/c</li>
+                    <li>Один внешний ip-адрес</li>
+                    <li>Круглосуточный автоматизированный мониторинг с оповещением по e-mail</li>
+                    <li>Создание ежедневных резервных копий (за три последних дня)</li>
+                </ul>
+            </section>
+
+            <section id="support">
+                <h2>Бонусная техподдержка</h2>
+                <ul>
+                    <li><span>1-ый уровень поддержки</span> — при заказе одного виртуального сервера (от 800 р./месяц): восстановление резервных копий, консультации</li>
+                    <li><span>2-ой уровень поддержки</span> — при заказе инфраструктуры (от 8 000 р./месяц): сопровождение системного ПО, установка обновлений</li>
+                    <li><span>3-ий уровень поддержки</span> — при заказе сложнной инфраструктуры (от 30 000 р./месяц): все работв, связанные с поддержкой оборудования и системного программного обеспечения</li>
+                </ul>
+            </section>
+
+            <section id="services">
+                <h2>Калькулятор услуг</h2>
+                <div class="wrap">
+                    <p>Для заказа услуги IaaS вы можете воспользоваться нашим калькулятором услуг.</p>
+                    <p><span>Бизнес-калькулятор</span> представляет готовые конфигурации IaaS для вашего бизнеса. Вам необходимо выбрать нужную конфигурацию и указать количество сотрудников, которые будут иметь доступ к удаленному рабочему столу. С подробным описанием вариантов готовых конфигураций можно ознакомиться в разделе <a href="#">Типовые решения</a>.</p>
+                    <p>Если вам не подходят готовые конфигурации, то вы можете воспользоваться <span>техническим калькулятором</span> и спроектировать нужную вам инфраструктуру.</p>
+                    <p>Для получения консультации по выбору и заказу вы можете позвонить нам по номеру: 8 (342) 238-86-01.<br>По вашему желанию мы спроектируем и организуем любую нужную Вам инфраструктуру.</p>
+                </div>
+            </section>
+            <section id="calc">
+                <div class="wrap">
+                    <div class="switch">
+                        <div class="active js-switch" data-id="#js-calc1">Бизнес-калькулятор</div>
+                        <div class="js-switch" data-id="#js-calc2">Технический калькулятор</div>
+                    </div>
+
+                    <ul class="calc calc2 active js-calc" id="js-calc1">
+                        <li>
+                            <div class="label">Количество сотрудников</div>
+                            <div class="container2">
+                                <div class="slider-cell" id="slider6"></div>
+                                <div><input type="text" class="input js-input2" value="1" data-value="1" id="js-input6" data-id="#slider6" /><span class="icon" title="Укажите количество сотрудников, которые будут иметь доступ к удаленному рабочему столу (356 рублей/месяц за 1 сотрудника)"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="container2">
+                                <div>
+                                    <div class="checkbox js-checkbox" data-id="#js-input7" id="js-checkbox7"></div>
+                                    <div class="label2">Общая схема (от 800 руб./месяц)</div>
+                                </div>
+                                <div><input type="text" class="input js-input" value="0" data-value="0" id="js-input7" data-id="#js-checkbox7" /><span class="icon" title="Инфраструктура делится на две части: публичная и служебная, что существенно повышает информационную безопасность данного решения. Области применения: любые серверные задачи, перенос всей сетевой инфраструктуры из офиса в облако. "></span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container2">
+                                <div>
+                                    <div class="checkbox js-checkbox" data-id="#js-input8" id="js-checkbox8"></div>
+                                    <div class="label2">Виртуальный сервер (от 1000 руб./месяц)</div>
+                                </div>
+                                <div><input type="text" class="input js-input" value="0" data-value="0" id="js-input8" data-id="#js-checkbox8" /><span class="icon" title="Сервер, к которому все получают доступ на равных условиях. Области применения: мало и средне нагруженный веб-сервер, игровой сервер, сервер sip-телефонии."></span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container2">
+                                <div>
+                                    <div class="checkbox js-checkbox" data-id="#js-input9" id="js-checkbox9"></div>
+                                    <div class="label2">Интернет-магазин (от 1200 руб./месяц)</div>
+                                </div>
+                                <div><input type="text" class="input js-input" value="0" data-value="0" id="js-input9" data-id="#js-checkbox9" /><span class="icon" title="В публичную зону выносится сервер с сайтом интернет-магазина, а служебный сервер с базой данных помещается в зону служебных серверов с ограничением доступа."></span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="container2">
+                                <div>
+                                    <div class="checkbox js-checkbox" data-id="#js-input10" id="js-checkbox10"></div>
+                                    <div class="label2">Комплексное решение, включающее 1С, интернет-магазин и терминальный сервер<br>(от 1600 руб./месяц)</div>
+                                </div>
+                                <div><input type="text" class="input js-input" value="0" data-value="0" id="js-input10" data-id="#js-checkbox10" /><span class="icon" title="Решение включает в себя: веб-сервер с интернет-магазином, связанный с сервером 1С. В этой схеме используется терминальный сервер для доступа сотрудников компании к серверу 1С."></span></div>
+                            </div>
+                        </li>
+                        <li class="total">Стоимость: <span id="js-total">2000 руб./месяц</span></li>
+                    </ul>
+
+                    <ul class="calc js-calc" id="js-calc2">
+                        <li>
+                            <div class="label">Количество процессоров (CPU)</div>
+                            <div class="container2">
+                                <div class="slider-cell" id="slider"></div>
+                                <div><input type="text" class="input js-input2" value="1" data-value="1" id="js-input1" data-id="#slider" /><span class="unit">CPU</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">Оперативная память (ОЗУ)</div>
+                            <div class="container2">
+                                <div class="slider-cell" id="slider2"></div>
+                                <div><input type="text" class="input js-input2" value="1" data-value="1" id="js-input2" data-id="#slider2" /><span class="unit">GB</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">Дисковая память (SATA-диски, RAID10)</div>
+                            <div class="container2">
+                                <div class="slider-cell" id="slider3"></div>
+                                <div><input type="text" class="input js-input2" value="20" data-value="20" id="js-input3" data-id="#slider3" /><span class="unit">GB</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">Дисковая память повышенной производительности (SAS-диски, RAID10)</div>
+                            <div class="container2">
+                                <div class="slider-cell" id="slider4"></div>
+                                <div><input type="text" class="input js-input2" value="0" data-value="0" id="js-input4" data-id="#slider4" /><span class="unit">GB</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">Виртуальный роутер</div>
+                            <div class="container2">
+                                <div class="slider-cell" id="slider5"></div>
+                                <div><input type="text" class="input js-input2" value="1" data-value="1" id="js-input5" data-id="#slider5" /><span class="unit">Шт.</span></div>
+                            </div>
+                        </li>
+                        <li class="total">Стоимость: <span id="js-total2">800 руб./месяц</span></li>
+                    </ul>
+                    <div class="action"><a href="#" class="button">Заказать</a></div>
+                </div>
+                <!-- END class="wrap" -->
+            </section>
+            <!-- END id="calc" -->
+
+        </div>
+        <!-- END id="content" -->
+
+        <footer id="footer">
+            <div class="container">
+                <div class="logo">
+                    <a href="/"><img src="img/logo.png" alt=""></a>
+                    <span>© Веб Депо, 2017</span>
+                </div>
+                <ul class="menu">
+                    <li>
+                        <ul>
+                            <li><a href="#">Веб Депо</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="#">Лицензии</a></li>
+                            <li><a href="#">Реквизиты</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">Платформа</a></li>
+                            <li><a href="#">О платформе	</a></li>
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Свидетельства</a></li>
+                            <li><a href="#">Курсы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">IAAS</a></li>
+                            <li><a href="#">Об услуге</a></li>
+                            <li><a href="#">Прейскурант</a></li>
+                            <li><a href="#">Типовые решения</a></li>
+                            <li><a href="#">Демостенд</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li><a href="#">Личный кабинет</a></li>
+                            <li><a href="#">Войти</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="contacts">
+                    <div class="tel">8 (342) 238-86-01</div>
+                    <div class="email">info@web-depo.com</div>
+                    <div class="address">Пермь, ул. Пермская, д.70, офис 22</div>
+                </div>
+            </div>
+        </footer>
+        <!-- END id="footer" -->
+    </div>
+    <!-- END id="main" -->
+
+    <!--  подключаем javascript
+    ------------------------------------------------------- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

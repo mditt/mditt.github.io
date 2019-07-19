@@ -1,0 +1,698 @@
+html, body, div, span, applet, object, iframe, h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i, center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption, footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*===================*/
+
+
+/*  OpenSans */
+
+@font-face {
+    font-family: 'pfagorasanspro-thin';
+    src: url("/fonts/pfagorasanspro-thin.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pfagorasanspro-reg';
+    src: url("/fonts/pfagorasanspro-reg.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pfagorasanspro-medium';
+    src: url("/fonts/pfagorasanspro-medium.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*==================*/
+
+html,body,#main {
+    height: 100%;
+}
+
+#page {
+    background: #fff;
+    color: #000;
+    font-family: 'pfagorasanspro-thin', sans-serif;
+    font-size: 14px;
+    position: relative;
+    min-width: 1200px;
+}
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+#main .container {
+    box-sizing: border-box;
+    width: 1200px;
+    padding: 0 53px;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.address {
+    position: relative;
+    padding-left: 23px;
+}
+
+.address::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -9px;
+}
+
+.email {
+    position: relative;
+    padding-left: 30px;
+}
+
+.email::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -8px;
+}
+
+.tel {
+    position: relative;
+    padding-left: 28px;
+}
+
+.tel::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -9px;
+}
+
+
+/*  HEADER
+    --------------------------- */
+
+#header {
+    position: relative;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    font-size: 0;
+    min-width: 1200px;
+}
+
+#header .top_block {
+    height: 38px;
+    font-size: 12px;
+}
+
+#header .top_block>.container {
+    height: 38px;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#header .menu_block {
+    height: 92px;
+    background: #00aeef;
+}
+
+#header .menu_block>.container {
+    box-sizing: border-box;
+    padding-top: 17px;
+    height: 92px;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+#header>img {
+    width: 100%;
+}
+
+#header .logo img {
+    height: 70px;
+}
+
+#header .menu {
+    position: relative;
+}
+
+#header .menu li {
+    display: inline-block;
+}
+
+#header .menu>li {
+    padding: 12px 20px;
+}
+
+#header .menu>li:first-child {
+    padding: 12px 20px 12px 0;
+}
+
+#header .menu>li:last-child {
+    padding: 12px 0 12px 20px;
+}
+
+#header .menu .link {
+    font-size: 14px;
+    color: #000;
+    font-family: 'pfagorasanspro-medium';
+}
+
+#header .menu>li:hover .link {
+    color: #fff;
+}
+
+#header .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: -4px;
+    display: none;
+}
+
+#header .menu>li:hover .dropdown-menu {
+    display: inline-block;
+}
+
+#header .dropdown-menu>li {
+    margin-left: 34px;
+    padding: 10px 0;
+}
+
+#header .dropdown-menu>li:first-child {
+    margin: 0;
+}
+
+#header .dropdown-menu a {
+    font-size: 12px;
+    color: #fff;
+}
+
+#header .dropdown-menu a:hover {
+    text-decoration: underline;
+}
+
+#header .action {
+    padding-top: 6px;
+}
+
+#header .action>a {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+#header .login {
+    width: 81px;
+    border: 1px solid #fff;
+}
+
+#header .demo {
+    margin-left: 8px;
+    width: 174px;
+    background: #fff;
+}
+
+#header .address::before {
+    content: url('/img/location.png');
+}
+
+#header .email::before {
+    content: url('/img/email.png');
+}
+
+#header .tel::before {
+    content: url('/img/tel.png');
+}
+
+#header .tel>a {
+    color: #000;
+}
+
+
+/*  Footer
+    --------------------------------*/
+
+#footer {
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 123px;
+    background: #00aeef;
+    font-size: 12px;
+}
+
+#footer>.container {
+    box-sizing: border-box;
+    height: 123px;
+    padding-top: 12px;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+#footer .logo img {
+    height: 70px;
+}
+
+#footer .logo>span {
+    display: block;
+    margin-top: 20px;
+}
+
+#footer .menu {
+    padding-top: 10px;
+}
+
+#footer .menu>li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+}
+
+#footer .menu>li:first-child {
+    margin: 0;
+}
+
+#footer .menu li li {
+    margin-bottom: 5px;
+}
+
+#footer .menu li li:last-child {
+    margin: 0;
+}
+
+#footer .menu a {
+    color: #000;
+}
+
+#footer .menu li li:first-child>a {
+    color: #fff;
+    font-family: 'pfagorasanspro-medium';
+}
+
+#footer .contacts {
+    padding-top: 10px;
+}
+
+#footer .contacts>div {
+    margin-bottom: 12px;
+}
+
+#footer .contacts>div:last-child {
+    margin: 0;
+}
+
+#footer .address::before {
+    content: url('/img/location2.png');
+}
+
+#footer .email::before {
+    content: url('/img/email2.png');
+}
+
+#footer .tel {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+#footer .tel::before {
+    content: url('/img/tel2.png');
+}
+
+
+/*=================================*/
+
+#content {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+#content h2 {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'pfagorasanspro-medium';
+}
+
+
+/*=================================*/
+
+#prices {
+    padding: 44px 0 40px;
+    text-align: center;
+}
+
+#prices>h2 {
+    margin-bottom: 36px;
+}
+
+#prices table {
+    margin: 0 auto 36px;
+    background: #ebf1f8;
+}
+
+#prices td {
+    padding: 11px 0 13px;
+    border: 1px solid #959595;
+    text-align: left;
+}
+
+#prices .top {
+    text-align: center;
+    font-family: 'pfagorasanspro-medium';
+}
+
+#prices .left {
+    padding: 11px 43px 13px;
+}
+
+#prices .right {
+    padding: 11px 54px 13px;
+}
+
+#prices>h3 {
+    margin-bottom: 11px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'pfagorasanspro-medium';
+}
+
+#prices ul {
+    display: inline-block;
+}
+
+#prices li {
+    background: url('/img/checkbox.png') no-repeat;
+    padding-left: 37px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+#prices li:last-child {
+    margin: 0;
+}
+
+
+/*================================*/
+
+#support {
+    padding: 16px 0 33px;
+    background: #00aeef;
+    text-align: center;
+}
+
+#support>h2 {
+    color: #fefefe;
+    margin-bottom: 23px;
+}
+
+#support ul {
+    width: 680px;
+    display: inline-block;
+}
+
+#support li {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#support li:last-child {
+    margin: 0;
+}
+
+#support li>span {
+    color: #fff;
+    font-family: 'pfagorasanspro-medium';
+}
+
+
+/*================================*/
+
+#services {
+    padding: 21px 0 31px;
+}
+
+#services>h2 {
+    margin-bottom: 22px;
+}
+
+.wrap {
+    margin: 0 auto;
+    width: 830px;
+}
+
+#services p {
+    line-height: 1.5;
+    margin-bottom: 21px;
+}
+
+#services p:last-child {
+    margin: 0;
+}
+
+#services p>span {
+    font-family: 'pfagorasanspro-medium';
+}
+
+#services p>a {
+    color: #00aeef;
+    text-decoration: underline;
+}
+
+
+/*===============================*/
+
+#calc {
+    padding: 44px 0 41px;
+    background: #ebf1f8;
+}
+
+#calc .wrap {
+    width: 856px;
+    margin: 0 auto;
+}
+
+#calc .switch {
+    font-size: 0;
+}
+
+#calc .switch>div {
+    display: inline-block;
+    width: 50%;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    font-size: 16px;
+    background: #00aeef;
+    border-radius: 15px 15px 0 0;
+    font-family: 'pfagorasanspro-reg';
+    cursor: pointer;
+}
+
+#calc .switch>.active {
+    background: #fff;
+    cursor: default;
+}
+
+#main .container2 {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+#calc .calc {
+    display: none;
+    padding: 36px 40px 20px;
+    background: #fff;
+}
+
+#calc .calc.active {
+    display: block;
+}
+
+#calc .calc li {
+    margin-bottom: 30px;
+}
+
+#calc .calc li:last-child {
+    margin: 0;
+}
+
+#calc .total {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'pfagorasanspro-medium';
+}
+
+#calc .total>span {
+    font-family: 'pfagorasanspro-thin';
+}
+
+#calc .label {
+    margin-bottom: 10px;
+}
+
+#calc .input {
+    display: inline-block;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 82px;
+    height: 34px;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    border: 2px solid #b6b8bb;
+    border-radius: 5px;
+    font-family: 'pfagorasanspro-medium';
+}
+
+#calc .input:focus {
+    border-color: #cf2075;
+}
+
+#calc .unit {
+    width: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    color: #999;
+    font-size: 12px;
+    font-family: 'pfagorasanspro-medium';
+}
+
+#calc .icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #2887ff url('/img/icon.png') 50% 50% no-repeat;
+}
+
+#calc .calc2 li {
+    margin-bottom: 40px;
+}
+
+#calc .label2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 11px;
+    line-height: 1.5;
+}
+
+#calc .checkbox {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #b6b8bb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#calc .checkbox.active {
+    background: url('/img/checkbox2.png') 50% 50% no-repeat;
+}
+
+#calc .action {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#calc .button {
+    display: inline-block;
+    width: 181px;
+    height: 43px;
+    line-height: 43px;
+    text-align: center;
+    border-radius: 5px;
+    background: #00aeef;
+    color: #000;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.54);
+}
+
+#calc .slider-cell {
+    width: 610px;
+}
+
+.ui-widget-header {
+    background: url('/img/bg_slider_header.jpg') top left no-repeat;
+}
+
+.ui-widget-content {
+    height: 10px;
+    background: #dfe1e6;
+    border-radius: 5px;
+}
+
+#calc .ui-slider-handle {
+    width: 44px;
+    height: 20px;
+    border: none;
+    background: url('/img/slider_handle.png') top left no-repeat;
+    cursor: pointer;
+}
